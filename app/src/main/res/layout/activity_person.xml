@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yf.duitang.personalui.ScrollNotifyView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <include layout="@layout/profile_header"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="专辑 0"
+                    android:textSize="16sp"
+                    android:textColor="@color/light_black"
+                    android:paddingLeft="16dp"
+                    android:layout_gravity="left"
+                    android:gravity="center_vertical"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="查看所有"
+                    android:textSize="16sp"
+                    android:textColor="@color/dark_grey"
+                    android:paddingRight="16dp"
+                    android:gravity="center_vertical"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="8dp"
+                    android:src="@drawable/icon_arrow"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:paddingLeft="16dp"
+                android:src="@drawable/selector_add_album"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingBottom="8dp"
+                android:text="创建新专辑"
+                android:textSize="12sp"
+                android:textColor="@color/light_black"
+                android:gravity="center_vertical"
+                />
+
+            <View
+                style="@style/DividerLine"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Club 0"
+                android:textSize="16sp"
+                android:textColor="@color/light_black"
+                android:paddingLeft="16dp"
+                android:gravity="center_vertical"
+                />
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:paddingLeft="16dp"
+                android:src="@drawable/selector_find_club"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingBottom="8dp"
+                android:text="发现Club"
+                android:textSize="12sp"
+                android:textColor="@color/light_black"
+                android:gravity="center_vertical"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:background="@color/dark_grey"
+            />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:clickable="true">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="所有的图片 0"
+                    android:textSize="16sp"
+                    android:textColor="@color/light_black"
+                    android:paddingLeft="16dp"
+                    android:gravity="center_vertical"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="8dp"
+                    android:src="@drawable/icon_arrow"
+                    android:layout_gravity="center"
+                    />
+            </TableRow>
+
+            <View
+                style="@style/DividerLine"/>
+
+            <TableRow
+                android:clickable="true">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="喜欢的专辑 0"
+                    android:textSize="16sp"
+                    android:textColor="@color/light_black"
+                    android:paddingLeft="16dp"
+                    android:gravity="center_vertical"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="8dp"
+                    android:src="@drawable/icon_arrow"
+                    android:layout_gravity="center"
+                    />
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:background="@color/dark_grey"
+            />
+
+    </LinearLayout>
+
+</com.yf.duitang.personalui.ScrollNotifyView>

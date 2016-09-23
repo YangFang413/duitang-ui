@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/action_bar_icon_search"
+        android:title="搜索"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/action_add"
+        android:icon="@drawable/action_bar_icon_add"
+        android:title="新增"
+        app:showAsAction="ifRoom"
+        />
+
+    <!-- orderincategory是设置菜单的顺序的 -->
+    <item
+        android:id="@+id/action_settings"
+        android:title="设置"
+        app:showAsAction="never"
+        android:orderInCategory="100"
+        />
+
+    </menu>

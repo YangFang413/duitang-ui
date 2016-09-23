@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- android:state_enabled 与 ImageView.setEnabled 相关联 -->
+    <item android:drawable="@drawable/point_nomal" android:state_enabled="false" />
+    <item android:drawable="@drawable/point_choose" android:state_enabled="true"/>
+</selector>

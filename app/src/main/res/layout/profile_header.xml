@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/guitar_background">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_circle_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/user_default_face"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="用户"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_below="@id/user_circle_image"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/collect_number"
+        android:layout_width="32dp"
+        android:layout_height="16dp"
+        android:layout_marginBottom="8dp"
+        android:drawableLeft="@drawable/ic_star_white"
+        android:textColor="#ffffff"
+        android:background="@null"
+        android:text="0"
+        android:textSize="12sp"
+        android:layout_below="@+id/user_name"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关注 0 · 粉丝 0"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/collect_number"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.yf.duitang.personalui.ScaleImageView
+        android:id="@+id/staggeredgridview_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:src="@drawable/gallery0"
+        />
+
+    <TextView
+        android:id="@+id/staggeredgridview_image_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:text="小清新 语录 歌词"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/staggeredgridview_image_collection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:drawableLeft="@drawable/ic_star"
+        android:textColor="@color/light_black"
+        android:text=" 325"
+        android:textSize="10sp"
+        />
+
+    <View
+        style="@style/DividerLine" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_image_small"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="4dp"
+            android:src="@drawable/thumb0"
+            />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/user_image_small"
+            android:text="用户A"
+            android:textColor="@color/blue"
+            android:textSize="12sp"
+            />
+        
+        <TextView
+            android:id="@+id/collection_name"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@id/user_name"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/user_image_small"
+            android:text="收藏到 我们一起"
+            android:textColor="@color/light_black"
+            android:textSize="12sp"
+            />
+
+
+    </RelativeLayout>
+    
+</LinearLayout>

@@ -1,0 +1,17 @@
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swiperefreshlayout_new"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yf.duitang.fragment.NewFragment">
+
+    <com.origamilabs.library.views.StaggeredGridView
+        android:id="@+id/staggeredgridview_new"
+        app:numColumns="2"
+        app:drawSelectorOnTop="true"
+        app:itemMargin="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</android.support.v4.widget.SwipeRefreshLayout  >
